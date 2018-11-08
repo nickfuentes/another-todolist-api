@@ -77,7 +77,7 @@ module.exports = {
                 }
                 return todo
                     .destroy()
-                    .then(() => res.status(200).send({ message: 'Todo deleted successfully.' }))
+                    .then(() => res.status(200).send({ message: 'If you see this its working!' }))
                     .catch(error => res.status(400).send(error));
             })
             .catch(error => res.status(400).send(error));
